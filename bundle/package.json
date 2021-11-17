@@ -4,8 +4,8 @@
 	"description": "",
 	"main": "src/start.js",
 	"scripts": {
-		"setup": "node scripts/install.js && npm install && ts-patch install -s && patch-package --patch-dir ../api/patches/ && npm run build && node dist/bundle/src/start.js",
-		"build": "node scripts/build.js",
+		"setup": "node scripts/install.js && npm install && ts-patch install -s && patch-package --patch-dir ../api/patches/ && npm run build",
+		"build": "node scripts/build.js && node dist/bundle/src/start.js",
 		"start": "node scripts/build.js && node dist/bundle/src/start.js",
 		"start:bundle": "node dist/bundle/src/start.js",
 		"test": "echo \"Error: no test specified\" && exit 1",
